@@ -1,0 +1,41 @@
+/*h2{
+    color: greenyellow;
+}
+
+h4{
+    color: white;
+}
+/* .nav-tabs{
+    background-color:#005ac0;
+    color:white;
+  } */
+ 
+ /* .nav-tabs > li > a{
+    border: medium none;
+    color:black;
+  }
+  .nav-tabs > li > a.active{
+    background-color: #f00c93 !important;
+      border: medium none;
+      border-radius: 10px;
+      color:rgb(255, 255, 255);
+      font-weight: bold;
+      max-width: 200px;
+      margin: auto;
+  }
+*/
+  /* 001C9B */
+
+  .nav-pills > li > a{
+    border: medium none;
+    color:black;
+  }
+  .nav-pills > li > a.active{
+    background-color: 	#0300cc !important;
+      border: medium none;
+      border-radius: 10px;
+      color:#fafafa;
+      font-weight: bold;
+      max-width: 200px;
+      margin: auto;
+  }

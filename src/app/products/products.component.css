@@ -1,0 +1,23 @@
+li{
+    background-color: rgba(255, 255, 255, .4);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+li a{
+    color: greenyellow;
+    font-size: 25px;
+}
+li a:hover{
+    color: steelblue;
+    background-color: whitesmoke;
+}
+
+li a:focus{
+    background-color: goldenrod;
+    color: white;
+}
+
+.nav-item{
+    border-radius: 5px;
+    text-align: center;
+}

@@ -1,0 +1,44 @@
+<div class="header" style="width: 100%; background-color: transparent;">
+<h1 class="display-3 text-center mt-5" style="color: yellow; "><b>EZY-Cart</b></h1>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="http://wallpapercave.com/wp/4N2ItYw.jpg"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="register">Register</a>
+        </li>
+        <li class="nav-item" *ngIf="!us.userLoginStatus">
+          <a class="nav-link" routerLink="login">Login</a>
+        </li>
+        <li class="nav-item" *ngIf="us.userLoginStatus">
+          <a class="nav-link" routerLink="login" (click)=userLogout()>Logout</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="contactus">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="products">Products</a>
+        </li>
+      </ul>  
+    </div>
+  </div>
+</nav>
+
+
+<!--nesting Navbar selected components-->
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+
+<!-- nesting footer component -->
+<app-footer></app-footer>
+

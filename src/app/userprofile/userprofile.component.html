@@ -1,0 +1,19 @@
+<h4 class="text-end text-white">Welcome, <span style="color:white">{{userObj.Username}} <img
+    src={{userObj.profileImage}} width="60px" alt="">
+<h6>{{userObj.Email}}</h6>
+</span></h4>
+
+<ul class="nav nav-tabs nav-justified mt-5">
+<li class="nav-item">
+<a class="nav-link text-warning mb-5" routerLinkActive="active" routerLink="view-products"><i class="far fa-eye"></i>View products</a>
+</li>
+<li class="nav-item">
+<a class="nav-link text-warning" routerLinkActive="active" routerLink="view-cart">Cart</a>
+</li>
+
+</ul>
+
+
+<div class="container">
+<router-outlet></router-outlet>
+</div>

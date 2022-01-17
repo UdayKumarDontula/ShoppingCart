@@ -1,0 +1,108 @@
+/*.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}*/
+
+.login-form{
+    width: 50%;
+    height: 60%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 14px rgba(0,0,0,1);
+    color: #fff;
+    padding-top: 40px;
+    margin-left: 300px;
+}
+
+.login h3{
+    letter-spacing: 3px;
+    font-size: 27px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}
+
+input{
+    width: 200px;
+    margin-top: 25px;
+    background: transparent;
+    outline: none;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 30px;
+    font-size: 15px;
+    border: 1px solid #fff;
+    padding: 13px;
+    box-shadow: 0 0 8px #fff;
+    transition: box-shadow 0.5s ease;
+}
+
+.btn{
+    padding: 12px 25px;
+    margin: 45px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 6000;
+    border-radius: 30px;
+    background: transparent;
+    box-shadow: 0 0 8px #fff;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+}
+
+input[placeholder]:focus{
+    color: #fff;
+}
+
+input:focus,.btn:hover{
+    box-shadow: 0 0 13px #fff;
+    transition: all .3s;
+}
+
+#label{
+    position: relative;
+}
+
+.form-floating input{
+    color: white;
+    background-color: transparent;
+}
+
+.content{
+    padding: 20px;
+    align-items: center;
+    align-content: center;
+    font-family: 'Ephesis', cursive;
+    font-size: 25px;
+    text-align: justify;
+    text-justify: inter-word;
+    word-spacing: 5px;
+}
+
+.tq{
+    text-align: center;
+}
+
+/*img{
+    height: 70px;
+    width:70px;
+}*/
+
+.card{
+    background: transparent;
+}
+
+a{
+    color: burlywood;
+    cursor: pointer;
+}
+
+.card-body{
+    text-size-adjust: 5px;
+}

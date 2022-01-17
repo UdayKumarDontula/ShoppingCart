@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="register-form sm-1 md-2 lg-3">
+        <div class="register">
+            <h3>Registration Form</h3>
+        </div>
+        <form #ref="ngForm" (ngSubmit)="onSignUp(ref.value)">
+            <div class="form-floating mb-3">
+                <input type="text" name="Username" id="un" class="form-control" placeholder="Username" autocomplete="off" ngModel>
+                <label for="un">Username</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" name="Email" id="em" class="form-control" placeholder="Email" autocomplete="off" ngModel>
+                <label for="em">E-Mail</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" name="Phone" id="pn" class="form-control" placeholder="Phone" autocomplete="off" ngModel> 
+                <label for="pn">Phone Number</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="password" name="password" id="pw" class="form-control" placeholder="password" autocomplete="off" ngModel>
+                <label for="pw">Password</label>
+            </div>
+          <input type="file" name="photo" class="form-control mb-3" ngModel (change)="selectFile($event)">
+            <button type="submit" class="btn bg-success">Register</button>
+        </form>
+    </div>
+</div>
+
+
+
+
+
